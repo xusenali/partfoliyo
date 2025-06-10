@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Nav from './components/Nav'
+import { RiRadioButtonFill } from 'react-icons/ri'
+import Button from '@mui/material/Button'
+import SkillGrid from './components/SkillGrid'
+import { useTranslation } from 'react-i18next'
 
-function App() {
-  const [count, setCount] = useState(0)
+
+
+const App = () => {
+
+  const { t } = useTranslation()
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Nav />
+      <div className=''>
+        <div className=' w-full h-20'></div>
+        <div className='flex my-5'>
+          <div className='w-[50%] min-h-[600px]  p-30 '>
+            <h1 className='text-[50px] text-[#EEEFE0]'>{t('header_title_part1')}</h1>
+            <p className="text-2xl mt-4 text-[#EEEFE0] ">{t('header_age_creative')}</p>
+            <p className="text-xl mt-2 text-[#EEEFE0]">{t('header_description')}</p>
+            <Button
+              className='!text-[#ADEED9] !border-[#ADEED9] !mt-5 !h-12 !px-8 !py-3 '
+              variant="outlined"
+              href="#projects"
+            >
+              {t('view_my_work')}
+            </Button>
+          </div>
+          <div className='w-[50%] min-h-[600px]'>
+            <SkillGrid />
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
