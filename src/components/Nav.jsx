@@ -10,13 +10,16 @@ const Nav = () => {
     const { t } = useTranslation()
 
     function handleSkill() {
-        let skils = document.querySelector('.skils')
-
-        skils.classList.add('animate-skill-focus')
-
-        setTimeout(() => {
-            skils.classList.remove('animate-skill-focus');
-        }, 1000);
+        const skils = document.querySelector('#skill');
+        if (skils) {
+            skils.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                skils.classList.add('animate-skill-focus');
+            }, 600)
+            setTimeout(() => {
+                skils.classList.remove('animate-skill-focus');
+            }, 2000);
+        }
     }
 
     const changeLanguage = (event) => {
@@ -26,7 +29,7 @@ const Nav = () => {
 
     return (
         <>
-            <div className=' w-full h-20  m-auto bg-[#A7C1A8] fixed top-0 left-0 right-0 z-50'>
+            <div className='shadowStyle w-full h-20  m-auto  fixed top-0 left-0 right-0 z-50'>
                 <nav className='w-[85%] h-full  m-auto flex items-center justify-between' >
                     <div className='logo text-6xl text-[#EEEFE0]'>
                         <LiaConnectdevelop />
@@ -52,11 +55,16 @@ const Nav = () => {
                             className=' gg'>
                             <RiTelegram2Fill className='text-2xl text-[#FCECDD]' />
                         </a>
-                        <select name="language" onChange={changeLanguage} className='text-[#FCECDD] bg-[#A7C1A8] outline-none border p-2 rounded-2xl'>
-                            <option value="uz">Uzbek</option>
-                            <option value="en">English</option>
-                            <option value="ru">Русский</option>
+                        <select
+                            className="appearance-none text-[#FCECDD] border p-2 rounded"
+                            onChange={changeLanguage}
+                        >
+                            <option className="bg-[#03001d] text-white" value="uz">Uzbek</option>
+                            <option className="bg-[#03001d] text-white" value="en">English</option>
+                            <option className="bg-[#03001d] text-white" value="ru">Русский</option>
                         </select>
+
+
                     </div>
                 </nav >
             </div >

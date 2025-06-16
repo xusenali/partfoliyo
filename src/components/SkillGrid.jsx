@@ -22,13 +22,10 @@ function SkillGrid() {
     ];
 
     return (
-        <div className="
-      py-16 px-4 sm:px-6 lg:px-8
-      flex justify-center items-center
-    ">
+        <div id='skill' className=" max-w-270 p-10  sm:px-6 lg:px-8 flex-col rounded  flex justify-center items-center">
+            <h1 className='text-center text-4xl text-[#EEEFE0]'>My Skills</h1>
             <div className="
             skils
-        border border-[#A7C1A8]
         rounded-3xl
        h-max
        w-full
@@ -43,21 +40,21 @@ function SkillGrid() {
                     return (
                         <div
                             key={index}
-                            className="
-                            w-30
-                rounded-xl
-                p-4 
-                border
-                flex flex-col items-center justify-center
-                text-[#EEEFE0]
-                text-base sm:text-lg font-medium
-               
-                 duration-300
-                 easy-in-out
-                cursor-pointer
-                whitespace-nowrap
-            
-              "
+                            className=" shadowStyle
+  w-30
+  rounded-xl
+  p-4 
+  flex flex-col items-center justify-center
+  text-[#EEEFE0]
+  text-base sm:text-lg font-medium
+  duration-300
+  ease-in-out
+  cursor-pointer
+  whitespace-nowrap
+  transform
+  hover:-translate-y-1
+"
+
                         >
                             {IconComponent ? (
                                 <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 mb-2 sm:mb-3" />
