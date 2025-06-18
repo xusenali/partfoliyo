@@ -16,6 +16,7 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    AOS.refresh();
   }, []);
 
   const handleProject = () => {
@@ -64,17 +65,16 @@ const App = () => {
         </div>
       </div>
 
-      {/* SKILLS */}
-      <div data-aos="fade-left" className='flex justify-center items-center m-30 mb-50'>
+      <div data-aos="fade-up" className='flex justify-center items-center m-30 mb-50'>
         <SkillGrid />
       </div>
 
-      <div id='projects' className='w-[85%] h-200 mx-auto shadowStyle pt-5 rounded scroll-mt-40'>
+      <div data-aos="fade-up" id='projects' className='w-[85%] h-200 mx-auto shadowStyle pt-5 rounded scroll-mt-40'>
         <h1 className='text-4xl text-white text-center'>My Project</h1>
         <div className='w-full h-full '></div>
       </div>
 
-      <section id="resume" className="w-[85%] mx-auto my-10 text-[#EEEFE0] shadowStyle rounded mt-50 pt-10 scroll-mt-40">
+      <section data-aos="fade-up" id="resume" className="w-[85%] mx-auto my-10 text-[#EEEFE0] shadowStyle rounded mt-50 pt-10 scroll-mt-40">
         <h2 className="text-4xl font-bold text-center mb-8">{t('resume_link')}</h2>
         <div className="p-6 rounded-2xl shadow-lg space-y-6">
           <div>
@@ -101,7 +101,7 @@ const App = () => {
         </div>
       </section>
 
-      <div id="contact" className="w-[85%] mx-auto py-10 text-[#EEEFE0] shadowStyle m-40 p-3 rounded scroll-mt-40">
+      <div data-aos="fade-up" id="contact" className="w-[85%] mx-auto py-10 text-[#EEEFE0] shadowStyle m-40 p-3 rounded scroll-mt-60">
         <h2 className="text-4xl font-bold text-center mb-10">{t('contact_title')}</h2>
         <div className="grid md:grid-cols-2 gap-10">
           <div className="space-y-6">
