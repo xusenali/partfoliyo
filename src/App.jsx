@@ -74,7 +74,7 @@ const App = () => {
         <div className='w-full h-full '></div>
       </div>
 
-      <section data-aos="fade-up" id="resume" className="w-[85%] mx-auto my-10 text-[#EEEFE0] shadowStyle rounded mt-50 pt-10 scroll-mt-40">
+      <section data-aos="fade-up" id="resume" className="w-[85%] mx-auto my-10 text-[#EEEFE0] shadowStyle rounded mt-50 pt-10 scroll-mt-50">
         <h2 className="text-4xl font-bold text-center mb-8">{t('resume_link')}</h2>
         <div className="p-6 rounded-2xl shadow-lg space-y-6">
           <div>
@@ -92,7 +92,19 @@ const App = () => {
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-2">{t('skills')}</h3>
-            <p>Html, Css, JavaScript, React, Redux Toolkit, React Query, TailwindCSS, Formik, API Integration</p>
+            <ul className='flex gap-4'>
+              <li className='shadowStyle p-1 rounded'>HTML</li>
+              <li className='shadowStyle p-1 rounded'>CSS</li>
+              <li className='shadowStyle p-1 rounded'>TailwindCSS</li>
+              <li className='shadowStyle p-1 rounded'>JavaScript</li>
+              <li className='shadowStyle p-1 rounded'>React</li>
+              <li className='shadowStyle p-1 rounded'>Redux Toolkit</li>
+              <li className='shadowStyle p-1 rounded'>React Query</li>
+              <li className='shadowStyle p-1 rounded'>Formik</li>
+              <li className='shadowStyle p-1 rounded'>API Integration</li>
+              <li className='shadowStyle p-1 rounded'>Next.js</li>
+              <li className='shadowStyle p-1 rounded'>TypeScript</li>
+            </ul>
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-2">{t('experience')}</h3>
@@ -101,7 +113,7 @@ const App = () => {
         </div>
       </section>
 
-      <div data-aos="fade-up" id="contact" className="w-[85%] mx-auto py-10 text-[#EEEFE0] shadowStyle m-40 p-3 rounded scroll-mt-60">
+      <div data-aos="fade-up" id="contact" className="w-[85%] mx-auto py-10 text-[#EEEFE0] shadowStyle m-30 p-3 rounded scroll-mt-60">
         <h2 className="text-4xl font-bold text-center mb-10">{t('contact_title')}</h2>
         <div className="grid md:grid-cols-2 gap-10">
           <div className="space-y-6">
