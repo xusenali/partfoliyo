@@ -6,9 +6,28 @@
   "skills_title": "Мои навыки",
   "about_me_title": "Обо мне",
   "projects_title": "Проекты",
-  "contact_title": "Контакты",
-  "about_me_link": "Обо мне",
+  "about_me_link": "Резюме",
   "projects_link": "Проекты",
   "contact_link": "Контакты",
-  "my_skill_link": "Мои навыки"
+  "my_skill_link": "Мои навыки",
+
+  "resume_link": "Резюме",
+  "personal_info": "Личная информация",
+  "full_name": "Полное имя",
+  "age": "Возраст",
+  "email": "Электронная почта",
+  "location": "Местоположение",
+  "education": "Образование",
+  "frontend_developer": "Фронтенд разработчик",
+  "skills": "Навыки",
+  "experience": "Опыт",
+  "junior_dev": "Младший фронтенд разработчик",
+  "download_resume": "Скачать резюме",
+
+   "contact_title": "Контакт",
+  "contact_name": "Ваше имя",
+  "contact_email": "Ваша почта",
+  "contact_message": "Ваше сообщение",
+  "contact_send": "Отправить",
+  "contact_location": "Samarqand, Узбекистан"
 }

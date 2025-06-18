@@ -1,5 +1,5 @@
 * {
-  font-family: "Savate", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @import "tailwindcss";
@@ -12,7 +12,6 @@
   transform: scale(1.2);
 
 }
-
 
 
 .a {
@@ -59,9 +58,11 @@
 #skill {
   box-shadow: rgba(75, 75, 75, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
+
 .shadowStyle{
    box-shadow: rgba(75, 75, 75, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
+
 body {
   background: linear-gradient(
     270deg,

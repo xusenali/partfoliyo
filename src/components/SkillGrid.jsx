@@ -22,7 +22,7 @@ function SkillGrid() {
     ];
 
     return (
-        <div id='skill' className=" max-w-270 p-10  sm:px-6 lg:px-8 flex-col rounded  flex justify-center items-center">
+        <div id='skill' className=" max-w-270 p-10  sm:px-6 lg:px-8 flex-col rounded  flex justify-center items-center scroll-mt-40 ">
             <h1 className='text-center text-4xl text-[#EEEFE0]'>My Skills</h1>
             <div className="
             skils

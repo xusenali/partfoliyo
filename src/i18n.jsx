@@ -21,8 +21,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'uz',        // 💾 localStorage'dagi tilni ishlatish
-    fallbackLng: "uz",
+    lng: 'en',        // 💾 localStorage'dagi tilni ishlatish
+    fallbackLng: "en",
     interpolation: {
       escapeValue: false,
     },

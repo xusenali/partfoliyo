@@ -6,9 +6,28 @@
   "skills_title": "My Skills",
   "about_me_title": "About Me",
   "projects_title": "Projects",
-  "contact_title": "Contact",
-  "about_me_link": "About Me",
+  "about_me_link": "Resume",
   "projects_link": "Projects",
   "contact_link": "Contact",
-  "my_skill_link": "My Skill"
+  "my_skill_link": "My Skill",
+
+  "resume_link": "Resume",
+  "personal_info": "Personal Information",
+  "full_name": "Full Name",
+  "age": "Age",
+  "email": "Email",
+  "location": "Location",
+  "education": "Education",
+  "frontend_developer": "Frontend Developer",
+  "skills": "Skills",
+  "experience": "Experience",
+  "junior_dev": "Junior Frontend Developer",
+  "download_resume": "Download Resume",
+
+ "contact_title": "Contact",
+  "contact_name": "Your Name",
+  "contact_email": "Your Email",
+  "contact_message": "Your Message",
+  "contact_send": "Send",
+  "contact_location": "Samarqand, Uzbekistan"
 }

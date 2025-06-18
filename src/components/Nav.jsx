@@ -14,33 +14,53 @@ const Nav = () => {
         if (skils) {
             skils.scrollIntoView({ behavior: 'smooth' });
             setTimeout(() => {
-                skils.classList.add('animate-skill-focus');
-            }, 600)
-            setTimeout(() => {
                 skils.classList.remove('animate-skill-focus');
             }, 2000);
         }
     }
+    function handleProject() {
+        const projectSection = document.querySelector('#projects');
+        if (projectSection) {
+            projectSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
 
     const changeLanguage = (event) => {
         i18n.changeLanguage(event.target.value);
         localStorage.setItem('selectedLanguage', event.target.value)
     };
 
+    function handleScrollToResume() {
+        const resumeSection = document.getElementById('resume');
+        if (resumeSection) {
+            resumeSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    function handleScrollToContact() {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+
     return (
         <>
-            <div className='shadowStyle w-full h-20  m-auto  fixed top-0 left-0 right-0 z-50'>
+            <div className='shadowStyle w-full h-20 mx-auto sticky top-0 z-50 '>
                 <nav className='w-[85%] h-full  m-auto flex items-center justify-between' >
                     <div className='logo text-6xl text-[#EEEFE0]'>
                         <LiaConnectdevelop />
 
                     </div>
                     <ul className='text-[#EEEFE0] flex items-center gap-15' >
-                        <li className='cursor-pointer text-[20px] nav-link'>{t('about_me_link')}</li>
-                        <li className='cursor-pointer text-[20px] nav-link'>{t('projects_link')}</li>
-                        <li className='cursor-pointer text-[20px] nav-link'>{t('contact_link')}</li>
+                        <li onClick={handleScrollToResume} className='cursor-pointer text-[20px] nav-link'>{t('about_me_link')}</li>
+                        <li onClick={handleProject} className='cursor-pointer text-[20px] nav-link'>{t('projects_link')}</li>
+                        <li onClick={handleScrollToContact} className='cursor-pointer text-[20px] nav-link'>{t('contact_link')}</li>
                         <li onClick={handleSkill} className='cursor-pointer text-[20px] nav-link'>{t('my_skill_link')}</li>
                     </ul>
+
                     <div className='flex items-center gap-10'>
                         <a
                             href="https://www.instagram.com/xusen_xx/"
@@ -59,8 +79,8 @@ const Nav = () => {
                             className="appearance-none text-[#FCECDD] border p-2 rounded"
                             onChange={changeLanguage}
                         >
-                            <option className="bg-[#03001d] text-white" value="uz">Uzbek</option>
                             <option className="bg-[#03001d] text-white" value="en">English</option>
+                            <option className="bg-[#03001d] text-white" value="uz">Uzbek</option>
                             <option className="bg-[#03001d] text-white" value="ru">Русский</option>
                         </select>
 
@@ -73,4 +93,4 @@ const Nav = () => {
     )
 }
 
-export default Nav
+export default Nav;

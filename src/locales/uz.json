@@ -6,9 +6,30 @@
   "skills_title": "Ko'nikmalarim",
   "about_me_title": "Men haqimda",
   "projects_title": "Loyihalar",
-  "contact_title": "Aloqa",
-  "about_me_link": "Men haqimda",
+  "about_me_link": "Rezyume",
   "projects_link": "Loyihalar",
   "contact_link": "Aloqa",
-  "my_skill_link": "Ko'nikmalarim"
+  "my_skill_link": "Ko'nikmalarim",
+
+  "resume_link": "Rezyume",
+  "personal_info": "Shaxsiy ma'lumotlar",
+  "full_name": "To‘liq ism",
+  "age": "Yosh",
+  "email": "Elektron pochta",
+  "location": "Manzil",
+  "education": "Ta'lim",
+  "frontend_developer": "Frontend dasturchi",
+  "skills": "Ko‘nikmalar",
+  "experience": "Tajriba",
+  "junior_dev": "Junior Frontend Dasturchi",
+  "download_resume": "Rezyumeni yuklab olish",
+
+  "contact_title": "Aloqa",
+  "contact_name": "Ismingiz",
+  "contact_email": "Elektron pochtangiz",
+  "contact_message": "Xabaringiz",
+  "contact_send": "Yuborish",
+  "contact_location": "Samarqand, O'zbekiston"
+
+
 }
