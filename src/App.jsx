@@ -29,10 +29,10 @@ const App = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      'service_gmail',           // Service ID
-      'template_contact',        // Template ID
+      'service_ojzg73b',           // Service ID
+      'template_ywqdj7i',        // Template ID
       form.current,
-      'r5AbcDeFG123'             // Public key (YOUR user ID)
+      'LputyAqYA-mDG8tJX'             // Public key (YOUR user ID)
     ).then(
       () => {
         ('Xabar yuborildi!');
@@ -69,7 +69,7 @@ const App = () => {
         <SkillGrid />
       </div>
 
-      <div data-aos="fade-up" id='projects' className='w-[85%] h-200 mx-auto shadowStyle pt-5 rounded scroll-mt-40'>
+      <div data-aos="fade-up" id='projects' className='w-[85%] h-200 mx-auto shadowStyle pt-5 rounded scroll-mt-6cd     0'>
         <h1 className='text-4xl text-white text-center'>My Project</h1>
         <div className='w-full h-full '></div>
       </div>
@@ -134,32 +134,35 @@ const App = () => {
           <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4">
             <input
               type="text"
-              name="from_name"
-              placeholder={t('contact_name')}
+              name="name"
+              placeholder="Your Name"
               className="p-3 rounded text-white shadowStyle outline-none"
               required
             />
             <input
               type="email"
-              name="from_email"
-              placeholder={t('contact_email')}
+              name="email"
+              placeholder="Your Email"
               className="p-3 rounded text-white shadowStyle outline-none"
               required
             />
             <textarea
               name="message"
-              placeholder={t('contact_message')}
+              placeholder="Your Message"
               className="p-3 rounded text-white shadowStyle outline-none"
               rows="5"
               required
-            ></textarea>
+            />
+            <input type="hidden" name="title" value="Portfolio Contact Form" />
+            <input type="hidden" name="time" value={new Date().toLocaleString()} />
             <button
               type="submit"
-              className="p-3 rounded text-white shadowStyle outline-none hover:bg-[#005577] transition ease-in-out"
+              className="p-3 rounded text-white shadowStyle outline-none hover:bg-[#005577] transition"
             >
-              {t('contact_send')}
+              Send
             </button>
           </form>
+
         </div>
       </div>
     </>
