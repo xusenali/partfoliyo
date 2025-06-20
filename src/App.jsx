@@ -9,6 +9,7 @@ import emailjs from '@emailjs/browser';
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import SkillList from './components/SkillList';
 
 const App = () => {
   const { t } = useTranslation();
@@ -92,19 +93,7 @@ const App = () => {
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-2">{t('skills')}</h3>
-            <ul className='flex gap-4'>
-              <li className='shadowStyle p-1 rounded'>HTML</li>
-              <li className='shadowStyle p-1 rounded'>CSS</li>
-              <li className='shadowStyle p-1 rounded'>TailwindCSS</li>
-              <li className='shadowStyle p-1 rounded'>JavaScript</li>
-              <li className='shadowStyle p-1 rounded'>React</li>
-              <li className='shadowStyle p-1 rounded'>Redux Toolkit</li>
-              <li className='shadowStyle p-1 rounded'>React Query</li>
-              <li className='shadowStyle p-1 rounded'>Formik</li>
-              <li className='shadowStyle p-1 rounded'>API Integration</li>
-              <li className='shadowStyle p-1 rounded'>Next.js</li>
-              <li className='shadowStyle p-1 rounded'>TypeScript</li>
-            </ul>
+            <SkillList />
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-2">{t('experience')}</h3>

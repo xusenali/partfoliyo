@@ -48,7 +48,7 @@ const Nav = () => {
 
     return (
         <>
-            <div className='shadowStyle w-full h-20 mx-auto sticky top-0 z-50 '>
+            <div className='shadowStyle w-full h-20 mx-auto '>
                 <nav className='w-[85%] h-full  m-auto flex items-center justify-between' >
                     <div className='logo text-6xl text-[#EEEFE0]'>
                         <LiaConnectdevelop />
