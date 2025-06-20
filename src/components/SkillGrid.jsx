@@ -9,7 +9,7 @@ function SkillGrid() {
     const skills = [
         { name: 'HTML', icon: FaHtml5 },
         { name: 'CSS', icon: FaCss3Alt },
-        { name: 'Tailwind CSS', icon: SiTailwindcss },
+        { name: 'TailwindCSS', icon: SiTailwindcss },
         { name: 'JavaScript', icon: FaJsSquare },
         { name: 'OOP', icon: BiCodeBlock },
         { name: 'React', icon: FaReact },
@@ -41,7 +41,7 @@ function SkillGrid() {
                         <div
                             key={index}
                             className=" shadowStyle
-  w-30
+  w-45
   rounded-xl
   p-4 
   flex flex-col items-center justify-center

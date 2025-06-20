@@ -46,7 +46,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className='font-[terminatorgen]'>
       <Nav />
 
       <div className='w-[85%] mx-auto '>
@@ -57,7 +57,7 @@ const App = () => {
             <p className="text-xl mt-2 text-[#EEEFE0]">{t('header_description')}</p>
             <Button
               onClick={handleProject}
-              className='!text-[#ADEED9] !border-[#ADEED9] !mt-5 !h-12 !px-8 !py-3 '
+              className='!text-[#ADEED9] !border-[#ADEED9] !mt-5 !h-12 !px-8 !py-3 !font-[terminatorgen]'
               variant="outlined"
             >
               {t('view_my_work')}
@@ -154,7 +154,7 @@ const App = () => {
 
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

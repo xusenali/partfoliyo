@@ -1,6 +1,4 @@
-* {
-  font-family: "Montserrat", sans-serif;
-}
+
 
 @import "tailwindcss";
 
@@ -59,19 +57,17 @@
   box-shadow: rgba(75, 75, 75, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
 
-.shadowStyle{
-   box-shadow: rgba(75, 75, 75, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+.shadowStyle {
+  box-shadow: rgba(75, 75, 75, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
 
 body {
-  background: linear-gradient(
-    270deg,
-    #010011,
-    #03001d,
-    #005577,
-    #02001b,
-    #00000e
-  );
+  background: linear-gradient(270deg,
+      #010011,
+      #03001d,
+      #005577,
+      #02001b,
+      #00000e);
   background-size: 500% 500%;
   animation: bg-pan-left 10s linear infinite;
 }
@@ -80,7 +76,15 @@ body {
   0% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
+}
+
+@font-face {
+  font-family: "TerminatorGen";
+  src: url("./assets/terminatorgen.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
