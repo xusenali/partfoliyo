@@ -10,7 +10,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import SkillList from './components/SkillList';
-
+import toast from 'react-hot-toast'
 const App = () => {
   const { t } = useTranslation();
   const form = useRef();
@@ -43,6 +43,8 @@ const App = () => {
         console.log('Xatolik yuz berdi: ' + error.text);
       }
     );
+
+    toast.success('Your message has been sent.')
   };
 
   return (
@@ -132,7 +134,7 @@ const App = () => {
               type="email"
               name="email"
               placeholder="Your Email"
-              className="p-3 rounded text-white shadowStyle outline-none"
+              className="p-3 rounded text-white shadowStyle outline-none "
               required
             />
             <textarea
